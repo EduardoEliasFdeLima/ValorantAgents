@@ -1,0 +1,385 @@
+@import url(https://db.onlinewebfonts.com/c/7bb508fd7255ec38b6f29cb4cf8668cf?family=DINNextW1G-Regular);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "DINNextW1G-Regular";
+    
+}
+
+body{
+    background: linear-gradient(120deg, #474e66, #1a1a31);
+}
+
+.content{
+    position: relative;
+    height: auto;
+    min-height: 100vh;  
+    display: flex;    
+    text-align: center;
+    flex-direction: column;
+    padding: 40px 120px;
+	margin: 0 auto;
+    user-select:none;
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+}
+
+
+.imggg img{
+    width: 40%;
+}
+
+.filtros{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+ 
+}
+
+.filtros .search{
+    width: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.filtros .search input{
+    width: 300px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #f1f1f1;
+    font-size: 18px;
+    background: none;
+    color: #f1f1f1;
+}
+
+
+.filtros .search i{
+    position: absolute;
+    right: 0px;
+    opacity: 0.3;
+    font-size: 18px;
+    color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.filtros .btns{
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.filtros .btns h3{
+    position: absolute;
+    top: -30px;
+    left: 5px;
+    font-weight: 200;
+    color: #f1f1f1;
+
+
+}
+
+.filtros .btns .btn{
+    margin: 0 5px;
+    border: 1px solid #f1f1f1;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+
+.filtros .btns .btn:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.btnSelecionado{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+.filtros .btns .btn input{
+    width: 40px;
+    height: 40px;
+}
+
+
+.filtros .btns .btn img{
+    width: 85%;
+    height: 85%;
+}
+
+
+.bttmfiltros img{
+    width: 20px;
+    height: 20px;
+}
+
+.cards{
+    position: relative;
+    width: 101%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-gap: 10px;
+    padding-bottom: 50px;
+
+}
+
+.card{
+    width: 24%;
+    height: 155px; 
+    position: relative;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.1);
+    border: #fff solid 1px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+
+
+
+.card:hover{
+    background: rgba(255, 255, 255, 0.2);
+  
+}
+
+.card .imgg{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    opacity: 100%;
+    z-index: 2;
+
+}
+
+
+.imgg img{
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .2s;
+    transform: scale(1.1);
+
+}
+
+.nm{
+    position: absolute;
+    width: 70%;
+    text-align: right;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    float: right;
+    right: 0;
+    color: #fff;
+    align-self: top;
+    font-size: 30px;
+}
+
+.imgback{
+    position: absolute;
+    z-index: 0;
+    left: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.imgback img{
+   height: 100%;
+   opacity: 0.1;
+   transform: scale(1.1);
+
+}
+
+#no_results{
+    color: #f1f1f1;
+    font-size: 20px;
+}
+
+.credits{
+    position: absolute;
+    height: max-content;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    color: #f1f1f1;
+    opacity: 0.5;
+}
+
+
+@media screen and (max-width: 1300px){
+    
+    .cards .card{
+        width: 32%;
+        height: 145px; 
+    }
+        
+    .card .nm{
+        font-size: 25px;
+    }
+
+    .cards{   
+        grid-gap: 10px;
+    }
+
+}
+
+
+@media screen and (max-width: 1000px){
+    
+    .cards{
+        grid-gap: 20px;
+        justify-content: space-between;
+    }
+
+    .cards .card{
+        width: 47%;
+        height: 145px; 
+    }
+}
+
+
+@media screen and (max-width: 890px){
+    
+    .content{
+        padding: 40px 80px;
+    }
+
+    .cards{
+        grid-gap: 25px;
+    }
+
+    .cards .card{
+        width: 47%;
+        height: 145px; 
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 750px){
+    
+    .content{
+        padding: 40px 50px;
+    }
+
+}
+
+
+@media screen and (max-width: 650px){
+
+    .content{
+        padding: 40px 40px;
+    }
+
+    .cards{
+        margin: 40px auto;
+        width: 300px;
+        justify-content: center;
+    }
+
+    .cards .card{
+        width: 100%;
+    }
+
+
+    .filtros{
+        flex-direction: column;
+        grid-gap: 20px;
+        
+        margin-top: 50px;
+        font-size: 12px;
+    }
+
+          
+    .filtros .btns{
+        width: 300px;
+        margin-top: 20px;
+        justify-content: space-between;
+     }
+
+        
+    .filtros .btns h3{
+        top: -25px;
+        left: 0;    
+    }
+
+        
+    .filtros .btns .btn{
+        margin: 0; 
+        width: 35px;
+        height: 35px;
+       
+    }
+
+
+    .imggg img{
+        width: 320px;
+    }
+    
+    .filtros .search input{
+        width: 300px;
+        height: 30px;
+        font-size: 17px;  
+    }
+}
+
+
+@media screen and (max-width: 400px){
+
+    .content{
+        padding: 40px 18px;
+    }
+
+    .filtros{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .filtros .search input{
+        width: 280px;
+        height: 30px;
+        font-size: 17px;
+    }
+
+    .filtros .btns{
+        width: 280px;
+
+     }
+
+    .cards .card{
+        width: 95%;
+    }
+
+    .imggg img{
+        width: 300px;
+    }
+}
