@@ -20,7 +20,6 @@ function pesquisarAgente() {
       //se não passar pelo if do for, cai aqui e mostra a div
     }
 
-
     limpaBtnFiltro(); //limpa os botões de filtro 
 }
   
@@ -37,10 +36,12 @@ function limpaBtnFiltro(classepFiltrar){
   //pega todas as classes dos botões e faz um for removendo a classe 
 }
 
+var valorAntigo = ""; //variavel flag
 
 //com o clique vai filtrar para a a classe selecionada
 function classefiltro(classepFiltrar) {
-  
+
+ 
    var input = document.getElementById("Search");
    limpacampo(); //função pra limpar o input
 
@@ -51,28 +52,35 @@ function classefiltro(classepFiltrar) {
      input.value = `${classepFiltrar}s`;
    else
     input.value = `${classepFiltrar}es`;
-   
-  
+
+
     var cards = document.getElementsByClassName('card');  //variável com as classes card
-    valor = classepFiltrar; //pega o valor da classe do personagem
-  
-    var cards_filtrados = document.getElementsByClassName(`${valor}`); //só vai pegar os cards com a classe do botão clicado
-    for (i = 0; i < cards.length; i++) {	  //for pra pegar card por card e ir tirando ou pondo
-        cards[i].style.display = "none";
-      for (i2 = 0; i2 < cards_filtrados.length; i2++) {
-        cards_filtrados[i2].style.display = "block";
-      }       
+    var valor = classepFiltrar; //pega o valor da classe do personagem
+
+    var valorbtn = classepFiltrar;
+    
+    if (valorbtn == valorAntigo){
+      //se for clicado de novo, ele limpa o filtro 
+      reset();
+      valorAntigo = "";
+
+    }else{
+      var cards_filtrados = document.getElementsByClassName(`${valor}`); //só vai pegar os cards com a classe do botão clicado
+      for (i = 0; i < cards.length; i++) {	  //for pra pegar card por card e ir tirando ou pondo
+          cards[i].style.display = "none";
+        for (i2 = 0; i2 < cards_filtrados.length; i2++) {
+          cards_filtrados[i2].style.display = "block";
+        }       
+      }
+
+      limpaBtnFiltro();
+      var btnfundo = document.getElementById(`Btn${valor}`);  //cria uma variável só com o botão selecionaod
+      btnfundo.classList.toggle("btnSelecionado"); //toggle para adicionar ou remover classe do botão
+
+      valorAntigo = classepFiltrar;
     }
 
-    limpaBtnFiltro();
-
-    var btnfundo = document.getElementById(`Btn${valor}`);  //cria uma variável só com o botão selecionaod
-    btnfundo.classList.toggle("btnSelecionado"); //toggle para adicionar ou remover classe do botão
-
-  
 }
-
-
 
 //função para retornar todos os agentes na tela
 function reset(){
@@ -94,6 +102,3 @@ function limpacampo(){
     noR.style.display = "none"; //esconde a div sem resultado
    
 }
-   
-  
-  
