@@ -1,9 +1,11 @@
-function Carregar(){
-    //faz um forEach para gerar todos os cards com os dados do arquivo dados.js
+var overlay = document.getElementById('overlay');
+
+window.addEventListener('load', function(){
+    overlay.style.display = 'none';
+
     const secaoAgentes = document.querySelector("#cards");
     agentes.forEach(agente => secaoAgentes.append(card(agente.nome, agente.imagem, agente.tipo, agente.imagemfundo)));
-
-}
+})
 
 
 function card(nome, imagem, tipo, imagemfundo){ //parâmetros passados pelo foreach
