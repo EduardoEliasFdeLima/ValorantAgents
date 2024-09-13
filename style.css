@@ -1,11 +1,9 @@
-@import url(https://db.onlinewebfonts.com/c/7bb508fd7255ec38b6f29cb4cf8668cf?family=DINNextW1G-Regular);
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
-    font-family: "DINNextW1G-Regular";
-    
+    font-family: "Inter";
 }
 
 body{
@@ -132,7 +130,7 @@ h1{
     position: absolute;
     top: -30px;
     left: 5px;
-    font-weight: 200;
+    font-weight: 300;
     color: #f1f1f1;
 
 
