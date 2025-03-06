@@ -154,8 +154,13 @@ const agentes = [
         imagem: "https://i.imgur.com/c9r4Mhy.png",
         tipo: "Iniciador",
         imagemfundo: "https://imgur.com/as8nLLb.png"
+    },
+     {
+        nome: "Waylay",
+        imagem: "https://i.imgur.com/4ELIjTq.png",
+        tipo: "Duelista",
+        imagemfundo: "https://imgur.com/LukZWzW.png"
     }
-    
     
 ]
 //arquivo com os dados dos agentes
