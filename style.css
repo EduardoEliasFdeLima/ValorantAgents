@@ -200,9 +200,11 @@ h1{
 }
 
 .card{
-    width: calc(25% - 15px);
+    /* width: calc(25% - 15px); */
+    width: calc(20% - 15px);
     /* max-width: 320px; */
-    min-height: 155px; 
+    min-height: 165px; 
+    /* min-height: 170px; */
     position: relative;
     margin: 0;
     background: rgba(255, 255, 255, 0.1);
@@ -262,7 +264,6 @@ h1{
    height: 100%;
    opacity: 0.1;
    transform: scale(1.1);
-
 }
 
 #no_results{
@@ -281,13 +282,20 @@ h1{
 }
 
 
-@media screen and (max-width: 1300px){
-
-        
-    .content{
-        padding: 40px 100px;
+@media screen and (max-width: 1920px){
+    .card{
+        width: calc(25% - 15px);
+        min-height: 160px; 
     }
-    
+}
+
+@media screen and (max-width: 1500px){     
+    .content{
+        padding: 40px 60px;
+    }
+}
+
+@media screen and (max-width: 1300px){  
     .cards .card{
         width: 32%;
         height: 145px; 
@@ -331,15 +339,12 @@ h1{
 
 }
 
-
-@media screen and (max-width: 750px){
-    
+@media screen and (max-width: 750px){    
     .content{
         padding: 40px 50px;
     }
 
 }
-
 
 @media screen and (max-width: 650px){
 
@@ -363,28 +368,23 @@ h1{
         margin-top: 50px;
         font-size: 12px;
     }
-
           
     .filtros .btns{
         width: 320px;
         margin-top: 20px;
         justify-content: space-between;
      }
-
         
     .filtros .btns h3{
         top: -25px;
         left: 0;    
     }
 
-        
     .filtros .btns .btn{
         margin: 0; 
         width: 35px;
-        height: 35px;
-       
+        height: 35px;  
     }
-
 
     .imggg img{
         width: 320px;
@@ -399,7 +399,6 @@ h1{
 
 
 @media screen and (max-width: 400px){
-
     .content{
         padding: 40px 15px;
     }
