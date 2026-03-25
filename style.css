@@ -60,7 +60,7 @@ body{
     display: flex;    
     text-align: center;
     flex-direction: column;
-    padding: 40px 120px;
+    padding: 40px 220px;
 	margin: 0 auto;
     user-select:none;
     
@@ -282,12 +282,22 @@ h1{
 }
 
 
-@media screen and (max-width: 1920px){
+@media screen and (max-width: 2100px){
     .card{
-        width: calc(25% - 15px);
-        min-height: 160px; 
+         width: calc(25% - 15px);
     }
 }
+
+
+
+@media screen and (max-width: 1700px){
+          
+    .content{
+        padding: 40px 100px;
+    }
+
+}
+
 
 @media screen and (max-width: 1500px){     
     .content{
