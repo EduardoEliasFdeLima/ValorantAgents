@@ -166,6 +166,12 @@ const agentes = [
         imagem: "https://i.imgur.com/debDBlk.png",
         tipo: "Sentinela",
         imagemfundo: "https://i.imgur.com/YgK9iSy.png"
+    },
+    {
+        nome: "Miks",
+        imagem: "https://imgur.com/smYZ3m1.png",
+        tipo: "Controlador",
+        imagemfundo: "https://imgur.com/3jQmiMK.png"
     }
     
 ]
